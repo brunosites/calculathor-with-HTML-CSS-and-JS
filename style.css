@@ -1,0 +1,47 @@
+h1{
+  text-align:center;
+    /* Aplica o gradiente de fundo */
+  background-image: linear-gradient(to right, lightcoral, darkred);
+  
+  /* Recorta o fundo para aparecer apenas onde tem texto */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* Deixa o texto invisível para revelar o gradiente de fundo */
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Backup para navegadores antigos */
+  font-size:30px;
+}
+input{
+  text-align:center;
+  font-size:20px;
+  margin:10px;
+  width:50px;
+  height:50px;
+  border-radius:5%;
+  border:2px outset red;
+  align-items:center;
+}
+input:focus{
+  border:2px inset red;
+  outline: none;
+}
+.inputs {
+    display: flex;                /* Ativa o Flexbox no pai */
+    justify-content: center;      /* Centraliza horizontalmente */
+    align-items: center;          /* Centraliza verticalmente */             
+}
+button{
+  margin:10%;
+  display:block;
+  color:white;
+  background:darkred;
+  border:1px solid coral;
+  border-radius:10%;
+  width:200px;
+  height:50px;
+  font-size:20px;
+}
+*{
+  font-family:"Times New Roman";
+}
